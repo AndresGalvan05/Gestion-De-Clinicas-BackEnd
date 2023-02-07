@@ -9,11 +9,14 @@ import com.example.proyectobackagalvan.exception.ResourceNotFoundException;
 import com.example.proyectobackagalvan.service.OdontologoService;
 import com.example.proyectobackagalvan.service.PacienteService;
 import com.example.proyectobackagalvan.service.TurnoService;
+import com.example.proyectobackagalvan.util.Jsons;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -24,22 +27,20 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+//@RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc(addFilters = false)
 public class IntegracionTurnoTest {
     @Autowired
     private PacienteService pacienteService;
-
     @Autowired
     private OdontologoService odontologoService;
-
     @Autowired
     private TurnoService turnoService;
-
     @Autowired
     private MockMvc mockMvc;
 
-    private void cargarTurnoinicial() throws ResourceNotFoundException, BadRequestException {
+    private TurnoDTO cargarTurnoinicial() throws ResourceNotFoundException, BadRequestException {
         Domicilio domicilio = new Domicilio("Calle a",548,"Salta Capital","Salta");
         Paciente pacienteAGuardar = new Paciente("Javi","Grande", "8888", "prueba@gmail.com", LocalDate.of(1950,11,30), domicilio);
         Paciente pacienteGuardado = pacienteService.guardarPaciente(pacienteAGuardar);
@@ -52,6 +53,18 @@ public class IntegracionTurnoTest {
         turnoDTOAGuardar.setOdontologoId(odontologoGuardado.getId());
         turnoDTOAGuardar.setFecha(LocalDate.of(2022,12,12));
         turnoService.guardarTurno(turnoDTOAGuardar);
+
+        return turnoDTOAGuardar;
+    }
+
+    @Test
+    public void altaTurnoTest() throws Exception {
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/turnos")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(Jsons.asJsonString(cargarTurnoinicial())))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
+        assertFalse(result.getResponse().getContentAsString().isEmpty());
     }
 
     @Test

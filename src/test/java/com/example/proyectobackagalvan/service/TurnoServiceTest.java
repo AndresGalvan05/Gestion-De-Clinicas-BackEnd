@@ -22,14 +22,16 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class TurnoServiceTest {
 
-    @Autowired
-    ITurnoService turnoService;
+    private final ITurnoService turnoService;
+    private final IPacienteService pacienteService;
+    private final IOdontologoService odontologoService;
 
     @Autowired
-    IPacienteService pacienteService;
-
-    @Autowired
-    IOdontologoService odontologoService;
+    public TurnoServiceTest(ITurnoService turnoService, IPacienteService pacienteService, IOdontologoService odontologoService) {
+        this.turnoService = turnoService;
+        this.pacienteService = pacienteService;
+        this.odontologoService = odontologoService;
+    }
 
     @Test
     @Order(1)
