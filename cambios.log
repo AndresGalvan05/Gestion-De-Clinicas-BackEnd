@@ -2791,3 +2791,51 @@
 [2022-12-12 18:04:08] [ INFO ] [TurnoService:114] Iniciando la búsqueda de todos los turnos
 [2022-12-12 18:04:15] [ INFO ] [OdontologoService:49] Iniciando la búsqueda de todos los odontólogos
 [2022-12-12 18:04:21] [ INFO ] [OdontologoService:49] Iniciando la búsqueda de todos los odontólogos
+[2023-02-07 12:14:10] [ INFO ] [PacienteService:49] Iniciando la búsqueda de todos los pacientes
+[2023-02-07 12:14:15] [ INFO ] [PacienteService:49] Iniciando la búsqueda de todos los pacientes
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:23] Se registró un nuevo paciente
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:23] Se ha registrado exitosamente un nuevo odontólogo
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:71] Se registró un nuevo turno con id=null
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:114] Iniciando la búsqueda de todos los turnos
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:23] Se ha registrado exitosamente un nuevo odontólogo
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:45] Iniciando la búsqueda de un odontólogo con nombre Andrés y apellido Galván
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:41] Iniciando la búsqueda de un odontólogo con matrícula=12345
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:49] Iniciando la búsqueda de todos los odontólogos
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:23] Se ha registrado exitosamente un nuevo odontólogo
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=2
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:55] Iniciando la actualización del odontólogo con id=2
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=2
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:60] Iniciando la eliminación del odontólogo con id=1
+[2023-02-07 12:19:29] [ WARN ] [OdontologoService:29] No se encontró ningún odontólogo con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:23] Se registró un nuevo paciente
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:41] Iniciando la búsqueda de un paciente con email=8il.andre@gmail.com
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:45] Iniciando la búsqueda de pacientes con nombre Andrés y apellido Galván
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:49] Iniciando la búsqueda de todos los pacientes
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:23] Se registró un nuevo paciente
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:55] Se actualizó al paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:60] Se eliminó al paciente con id=1
+[2023-02-07 12:19:29] [ WARN ] [PacienteService:29] No se encontró ningún paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:23] Se registró un nuevo paciente
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:23] Se ha registrado exitosamente un nuevo odontólogo
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=2
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=3
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:71] Se registró un nuevo turno con id=null
+[2023-02-07 12:19:29] [ WARN ] [PacienteService:29] No se encontró ningún paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:96] Iniciando la búsqueda de un odontólogo con id=1
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:105] Iniciando la búsqueda de un paciente con id=1
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:114] Iniciando la búsqueda de todos los turnos
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:23] Se registró un nuevo paciente
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:23] Se ha registrado exitosamente un nuevo odontólogo
+[2023-02-07 12:19:29] [ INFO ] [PacienteService:32] Iniciando la búsqueda de un paciente con id=3
+[2023-02-07 12:19:29] [ INFO ] [OdontologoService:32] Iniciando la búsqueda de un paciente con id=4
+[2023-02-07 12:19:29] [ INFO ] [TurnoService:71] Se registró un nuevo turno con id=1
+[2023-02-07 12:19:29] [ WARN ] [PacienteService:29] No se encontró ningún paciente con id=1
+[2023-02-07 12:19:29] [ WARN ] [PacienteService:29] No se encontró ningún paciente con id=1
