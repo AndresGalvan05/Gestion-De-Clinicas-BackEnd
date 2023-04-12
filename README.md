@@ -1,5 +1,6 @@
 # Software de gestión de clínicas
-Sistema de reserva de citas para una clínica dental. Proyecto realizado para la asignatura Backend I, parte del curso Certified Tech Developer realizado en Digital House.
+Sistema de reserva de citas para una clínica dental.
+[Proyecto realizado para la asignatura Backend I, parte del curso Certified Tech Developer realizado en Digital House.](https://github.com/Elhunter05/Gestion-De-Clinicas-BackEnd/files/11215318/Trabajo.Integrador.Back.End.I.docx.pdf)
 
 | Java - Framework Spring Boot - Maven - JUnit - Hibernate(JPA) - Diseño de API RESTful |
 
